@@ -1,0 +1,4 @@
+{
+    "command": "dotnet run --urls http://0.0.0.0:5999 & sleep 5 && curl -s http://localhost:5999/swagger/v1/swagger.json > openapi.json && kill $(lsof -ti:5999) 2>/dev/null",
+    "working_directory": "/home/kavia/workspace/code-generation/note-management-system-161753-161763/notes_backend"
+}
